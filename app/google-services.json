@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "119942265969",
+    "firebase_url": "https://animals-sounds-bff2d.firebaseio.com",
+    "project_id": "animals-sounds-bff2d",
+    "storage_bucket": "animals-sounds-bff2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119942265969:android:57ab2b0535f922a7",
+        "android_client_info": {
+          "package_name": "com.ameer.animalssounds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119942265969-7iaqfgfir87580ptjbt2tbig90ea7a52.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ameer.animalssounds",
+            "certificate_hash": "dbb67c9ad8cdd0a5a4e1b5b0869aa35409ebf4c1"
+          }
+        },
+        {
+          "client_id": "119942265969-alm013gvkbv562ilvgg582v211edjapd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDlLrrsWmvtB7fhaO6MekJ4hoDgFSj6ak"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119942265969-alm013gvkbv562ilvgg582v211edjapd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

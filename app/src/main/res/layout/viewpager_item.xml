@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@color/common_google_signin_btn_text_light_disabled">
+
+    <ImageView
+        android:id="@+id/imageAnimal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="false"
+        android:fitsSystemWindows="false"
+        android:scaleType="fitXY" />
+
+    <com.google.android.gms.ads.NativeExpressAdView
+        android:id="@+id/nativeAdView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        ads:adSize="FULL_WIDTHx350"
+        ads:adUnitId="@string/nativeAdId"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+    </com.google.android.gms.ads.NativeExpressAdView>
+
+</RelativeLayout>

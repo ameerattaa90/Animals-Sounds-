@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.ameer.animalssounds.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#A5333333">
+
+            <EditText
+                android:background="#b3d69393"
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="3.00"
+                android:clickable="false"
+                android:enabled="false"
+                android:focusable="false"
+                android:freezesText="true"
+                android:gravity="center"
+                android:inputType="none"
+                android:text="@string/app_name"
+                android:textColor="#FFF"
+                android:textSize="@dimen/FontSizeView" />
+
+            <ImageButton
+                android:background="#b3d69393"
+                android:id="@+id/btnSpeakName"
+                android:layout_width="0dp"
+                android:layout_height="74dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1.00"
+                android:gravity="center"
+                android:src="@drawable/ic_speakname" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnPreviews"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#b3d69393"
+            android:src="@drawable/ic_previewsimage" />
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/btnSpeak"
+            android:background="#b3d69393"
+            android:src="@drawable/ic_nextimage" />
+
+
+        <ImageButton
+            android:id="@+id/btnSpeak"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f9d69493"
+            android:src="@drawable/ic_speak"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/btnPreviews"
+            android:layout_toEndOf="@+id/btnPreviews"
+            android:layout_toLeftOf="@+id/btnNext"
+            android:layout_toStartOf="@+id/btnNext" />
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnPreviews"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/bannerAdId">
+
+        </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+</FrameLayout>
